@@ -451,7 +451,7 @@ class acd3 {
         if (this.expanded === false) {
             if (typeof InstallTrigger !== 'undefined') this.expandBubbleFirefox(data, i, videoID);
             else this.expandBubbleChrome(data, i, videoID);
-            if (data.type === 'youtube') clickedPlayer.setPlaybackQuality('hd1080');
+            if (data.type === 'youtube') clickedPlayer.setPlaybackQuality('default');
             this.pauseAll();
             this.playSolo(data);
             this.expanded = true;
@@ -483,7 +483,6 @@ class acd3 {
 
         // select individual iframe that was clicked and increase it's size and center
         d3.select(`#${videoID}`)
-            .transition()
             .style('top', `${-((this.config.zoom - 1) * (this.config.diameter / 2))}px`)
             .style('left', `${-((this.config.zoom - 1) * (this.config.diameter / 2))}px`)
             .style('width', `${this.config.zoom * this.config.diameter}px`)
@@ -492,7 +491,6 @@ class acd3 {
         //select individual foreignObject which contains div and ifram and position it to desired location
         //also give pointer event(youtube controls) back to on hover
         d3.select(`#${this.config.htmlAnchorID}foreignID_${i}`)
-            .transition()
             .attr('x', 0)
             .attr('y', 0);
     }
@@ -502,7 +500,6 @@ class acd3 {
             .attr('transform', (d) => 'translate(0,0)')
 
         d3.select('#' + this.config.htmlAnchorID + 'foreignID_' + i)
-            .transition()
             .attr('x', 0)
             .attr('y', 0)
             .attr('width', this.config.diameter)
@@ -523,7 +520,6 @@ class acd3 {
             .style('pointer-events', 'auto');
 
         d3.select('#' + videoID)
-            .transition()
             .style('border-radius', '50%')
             .style('object-fit', 'cover')
             .style('width', '100%')

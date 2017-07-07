@@ -31,23 +31,23 @@ $('.navbar-collapse ul li a').click(function () {
 const bubbleConfig = {
   chartType: 'bubble',
   htmlAnchorID: 'vis1',
-  diameter: window.innerWidth <= 640 ? 350 : 650,
+  diameter: window.innerWidth <= 640 ? 350 : 600,
   zoom: 2.5,
   resolutionThresholds: [250, 500],
   autoplay: false,
   loop: false,
-  onDoubleClick: 'openNewWindow'
+  onDoubleClick: 'expandBubble'
 }
 
 const newsBubbleConfig = {
   chartType: 'bubble',
   htmlAnchorID: 'vis1',
-  diameter: window.innerWidth <= 640 ? 350 : 650,
+  diameter: window.innerWidth <= 640 ? 350 : 600,
   zoom: 1,
   resolutionThresholds: [300, 600],
   autoplay: false,
   loop: false,
-  onDoubleClick: 'expandBubble'
+  onDoubleClick: 'openNewWindow'
 }
 
 const scatterConfig = {
