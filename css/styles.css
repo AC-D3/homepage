@@ -28,7 +28,10 @@ h6 {
   border: 1px solid white;
   border-radius: 50%;
 }
-#vis2 {
+/*#vis2 {
+  border: 1px solid white;
+}*/
+.scatter-chart {
   border: 1px solid white;
 }
 p {
@@ -141,7 +144,7 @@ a:focus {
   vertical-align: middle;
 }
 .intro .intro-body .brand-heading {
-  font-size: 40px;
+  font-size: 80px;
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
@@ -152,7 +155,7 @@ a:focus {
     padding: 0;
   }
   .intro .intro-body .brand-heading {
-    font-size: 100px;
+    font-size: 180px;
   }
   .intro .intro-body .intro-text {
     font-size: 26px;
@@ -249,6 +252,12 @@ a:focus {
 }
 .bio-section h3 {
   margin: 10px 0;
+}
+.bio-section p {
+  margin-bottom: 10px;
+}
+.bio-section .engineer-contact {
+  margin-bottom: 10px;
 }
 .img-center {
   margin: 0 auto;

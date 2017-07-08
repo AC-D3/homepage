@@ -62,18 +62,18 @@ const scatterConfig = {
     xIsDate: true,
     yIsDate: false,
     rIsDate: false,
-    height: window.innerWidth <= 640 ? 300 : 600,
-    width: window.innerWidth <= 640 ? 450 : 900,
+    height: window.innerWidth <= 640 ? 600 * 0.4 : 600,
+    width: window.innerWidth <= 640 ? 900 * 0.4 : 900,
     plottableAreaMargin: { top: 0,
                            right: 0,
-                           bottom: window.innerWidth <= 640 ? 15 : 30,
-                           left: window.innerWidth <= 640 ? 32.5 : 65 },
-    plottableAreaPadding: { top: window.innerWidth <= 640 ? 60 : 120,
-                            right: window.innerWidth <= 640 ? 50 : 100,
-                            bottom: window.innerWidth <= 640 ? 40 : 80,
-                            left: window.innerWidth <= 640 ? 30 : 60 },
-    rLimits: { lower: window.innerWidth <= 640 ? 10 : 20,
-               upper: window.innerWidth <= 640 ? 60 : 120 }
+                           bottom: window.innerWidth <= 640 ? 30 : 30,
+                           left: window.innerWidth <= 640 ? 75 : 75 },
+    plottableAreaPadding: { top: window.innerWidth <= 640 ? 130 * 0.4 : 130,
+                            right: window.innerWidth <= 640 ? 110 * 0.4 : 110,
+                            bottom: window.innerWidth <= 640 ? 80 * 0.4 : 80,
+                            left: window.innerWidth <= 640 ? 70 * 0.4 : 70 },
+    rLimits: { lower: window.innerWidth <= 640 ? 20 * 0.4 : 20,
+               upper: window.innerWidth <= 640 ? 120 * 0.4 : 120 }
 }
 
 
